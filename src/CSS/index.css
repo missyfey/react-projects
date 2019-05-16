@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 :root{
-  --darkestColor: #0E103D;
+  /* --darkestColor: #0E103D;
   --darkColor: #69306D;
   --lightColor: #A5668B;
   --lighterColor: #D3BCC0;
@@ -18,7 +18,26 @@
   --lightNutral: #f0e8db;
   --midNutral: #cdc0b7;
   --darkNutral: #bbb7b6;
-  --navbarBg: #686b74;
+  --navbarBg: #686b74; */
+
+  --darkestColor: #0E103D;
+  --darkColor: #69306D;
+  --lightColor: #A5668B;
+  --lighterColor: #D3BCC0;
+  --lightestColor: #F2D7EE;
+
+  --darkestGray: #002626;
+  --darkGray: #156F72;
+  --midGray: #0E4749;
+  --lightGray: #95C623;
+  --darkText: #0E4749;
+  --lightText: #d7d8d2;
+  --brightColor: #FFC832;
+  --brightDull: #FFCD51;
+  --lightNutral: #f0e8db;
+  --midNutral: #cdc0b7;
+  --darkNutral: #bbb7b6;
+  --navbarBg: #136366;
   --font-family-page: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
 }
 
@@ -87,7 +106,7 @@ h1 , h2, h3,h4, h5 , h6{
 }
 .footerSocial{
   background: var(--darkestGray);
-  color: var(--darkText);
+  color: var(--lightText);
 }
 .footer{
   background: var(--midGray);
@@ -102,6 +121,11 @@ h1 , h2, h3,h4, h5 , h6{
   border-radius: 0;
   color: var(--lightText) !important;
   box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.322);
+}
+.footerForm input::placeholder,
+.footerForm textarea::placeholder
+{
+  color:white;
 }
 .footer textarea , .footer textarea:focus{
   background: var(--darkGray);
@@ -129,10 +153,10 @@ h1 , h2, h3,h4, h5 , h6{
 .homePage {
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.3) , 
-      rgba(0, 0, 0, 0.3) 
+      rgba(11, 73, 75, 0.979) , 
+      rgba(15, 125, 129, 0.233)
     ),
-    url(/img/home-bg.jpg);
+    url(/img/home-bg3.jpg);
     background-size: cover;
     background-position: top;
 }
@@ -259,6 +283,12 @@ h1 , h2, h3,h4, h5 , h6{
   font-size: 2em;
   color: var(--midGray);
 }
+.dirIcon:hover{
+  color: var(--darkGray);
+}
+.lightGreen{
+  color: var(--darkGray) !important;
+}
 .projectWrap p{
   font-size: .9em;
 }
@@ -301,10 +331,10 @@ background-color: var(--brightColor) !important;
 }
 #webProjects{
   background: 
-    linear-gradient(
-      rgba(97, 97, 97, 0.664), 
-      rgba(187, 187, 187, 0.363)
-    )
+  linear-gradient(
+    #0E4749ff , 
+    #0E474955
+  )
 }
 #reactProjects{
   background: #f0f0f0;
@@ -319,9 +349,28 @@ background-color: var(--brightColor) !important;
   background: none;
   border: none;
 }
-#displayForm{
+#displayToDoForm{
   height: 0;
   opacity: 0;
+}
+
+/********************************************** CardGame */
+.memoryCard{
+  width: 100px;
+  height: 150px;
+  box-shadow: #333 2px 2px 2px;
+}
+.cardGameBg{
+  width: 40px;
+  height: 60px;
+  box-shadow: #333 2px 2px 2px;
+}
+.transparent{
+  opacity: 0;
+}
+.cardHolder{
+  box-shadow: #333 2px 2px 2px;
+  background: linear-gradient(rgb(255, 196, 0) , rgb(255, 217, 0))
 }
 /********************************************** animations */
 @keyframes fadeIn{
