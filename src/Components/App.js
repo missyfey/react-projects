@@ -10,6 +10,7 @@ import Projects from './Projects';
 import Weather from './Weather';
 import RecipeBox from './RecipeBox';
 import ToDo from './ToDo';
+import Memorycard from './MemoryCard';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Home path="/" />
         <Projects path="/projects" />
+        <Memorycard path="/cardgame" />
         <RecipeBox path="/recipe" />
         <Weather path="/weather" />
         <ToDo path="/todo" />

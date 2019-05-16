@@ -88,8 +88,8 @@ class ToDo extends Component{
     }
     handlecancel(e){
         e.preventDefault();
-        $('#displayForm').animate({height: "0px"});
-        $('#displayForm').animate({opacity: "0"},1);
+        $('#displayToDoForm').animate({height: "0px"});
+        $('#displayToDoForm').animate({opacity: "0"},1);
         document.getElementById('newNote').value = '';
     }
     handleSearch(e){
@@ -105,15 +105,15 @@ class ToDo extends Component{
     }
     toggleForm(e){
         e.preventDefault();
-        let elm = document.getElementById('displayForm');
+        let elm = document.getElementById('displayToDoForm');
 
         if(elm.clientHeight === 0){
-            $('#displayForm').animate({opacity: "1"},1);
-            $('#displayForm').animate({height: "155px"},300);
+            $('#displayToDoForm').animate({opacity: "1"},1);
+            $('#displayToDoForm').animate({height: "155px"},300);
         }
         else{
-            $('#displayForm').animate({height: "0px"},300);
-            $('#displayForm').animate({opacity: "0"},1);
+            $('#displayToDoForm').animate({height: "0px"},300);
+            $('#displayToDoForm').animate({opacity: "0"},1);
         }        
     }
     render(){    
@@ -135,7 +135,7 @@ class ToDo extends Component{
                             <div className="col-md-5 col-12 menuBox p-4">
                                 <div>
                                     <button className="btn btn-secondary my-1 d-block w-100" onClick={this.toggleForm}><FaPlus className="float-left pt-1"/>Add to List</button>
-                                    <div className="displayForm" id="displayForm">
+                                    <div className="displayToDoForm" id="displayToDoForm">
                                         <form className="addToDo">
                                         <div className="form-group text-center">                  
                                             <textarea className="form-control" id="newNote" rows="3" placeholder='Still more to do :)'></textarea>
