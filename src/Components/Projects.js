@@ -10,7 +10,7 @@ class Projects extends Component{
             <article className="page">
                 <section id="webProjects" className="py-5">
                 <div className="container">
-                <h4 className="py-3 text-center">Website Design</h4>
+                <h4 className="lightText py-3 text-center">Website Design</h4>
                     <PlayGround />
                 </div>
                 </section>
@@ -40,14 +40,14 @@ class Projects extends Component{
                                 </div>
                                 <p className="text-center pt-2">Movie API</p>
                             </div>
-                            <div className="col-6 col-md-4 col-lg-3 p-3">
+                            <Link to="/cardgame" className="col-6 col-md-4 col-lg-3 p-3">
                                 <div className="project-item position-relative">
                                     <div className="project-item-shade position-absolute">
                                     </div>
                                     <img className="project-img" src="/img/memoryCardGame-project.jpg" alt="React project"/>
                                 </div>
                                 <p className="text-center pt-2">Memory Card Game</p>
-                            </div>
+                            </Link>
                             <Link to="/recipe" className="col-6 col-md-4 col-lg-3 p-3">
                                 <div className="project-item position-relative">
                                     <div className="project-item-shade position-absolute">
@@ -63,6 +63,14 @@ class Projects extends Component{
                                     <img className="project-img" src="/img/toDoList-project.jpg" alt="React project"/>
                                 </div>
                                 <p className="text-center pt-2">ToDo App</p>
+                            </Link>
+                            <Link to="/clock" className="col-6 col-md-4 col-lg-3 p-3">
+                                <div className="project-item position-relative">
+                                    <div className="project-item-shade position-absolute">
+                                    </div>
+                                    <img className="project-img" src="/img/clock-project.jpg" alt="React project"/>
+                                </div>
+                                <p className="text-center pt-2">Clock</p>
                             </Link>
                         </div>
                     </div>

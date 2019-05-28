@@ -11,8 +11,8 @@ class Recipe extends Component{
             <div className="card-body">
                 <h5 className="card-title">Ingredients:</h5>
                 <p className="card-text">{rec.description}</p>
-                <button className="btn btn-danger mt-2 mr-1" onClick={(e)=> this.props.delete(rec.id)}>Delete this Recipe</button> 
-                <button className="btn btn-success mt-2" onClick={(e)=> this.props.edit(rec.id)}>Edit this Recipe</button>                
+                <button className="btn btn-sm btn-danger mt-2 mr-1" onClick={(e)=> this.props.delete(rec.id)}>Delete this Recipe</button> 
+                <button className="btn btn-sm btn-success mt-2" onClick={(e)=> this.props.edit(rec.id)}>Edit this Recipe</button>                
             </div>
         </div>
         )

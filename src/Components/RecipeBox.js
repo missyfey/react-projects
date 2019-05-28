@@ -27,7 +27,7 @@ class RecipeBox extends Component{
 
     componentDidMount(){
         // Set initial recipes for first page load:
-        var initialRecipes = [{id:0 , name: 'Beef Wellington', description:'- 400g flat cap mushrooms, roughly chopped\n- sea salt and freshly ground black pepper\n- olive oil, for cooking\n- 750g piece of prime beef fillet\n- 1-2tbsp English mustard\n- 6-8 slices of Parma ham\n- 500g ready-made puff pastry\n- flour, to dust\n- 2 egg yolks, beaten'},
+        var initialRecipes = [{id:0 , name: 'Beef Wellington', description:`- 400g flat cap mushrooms, roughly chopped \n- sea salt and freshly ground black pepper\n- olive oil, for cooking\n- 750g piece of prime beef fillet\n- 1-2tbsp English mustard\n- 6-8 slices of Parma ham\n- 500g ready-made puff pastry\n- flour, to dust\n- 2 egg yolks, beaten`},
                                 {id:1 ,name: 'Kimchi Jjigae',description: '- 1 pound kimchi, cut into bite size pieces\n- ¼ cup kimchi brine\n- ½ pound pork shoulder (or pork belly)\n- ½ package of tofu (optional), sliced into ½ inch thick bite size pieces\n- 1 teaspoon salt\n- 2 teaspoons sugar\n- 2 teaspoons gochugaru (Korean hot pepper flakes)\n- 1 tablespoon gochujang (hot pepper paste)\n- 1 teaspoon sesame oil\n- 2 cups of anchovy stock (or chicken or beef broth)\n'},
                                 {id:2 ,name:'Cajun Pasta', description:'- 1 pound fettuccine\n- About 3 teaspoons Cajun spice mix\n- 3 whole boneless, skinless chicken breasts, cut into cubes\n- 2 tablespoons butter\n- 2 tablespoons olive oil\n- 3 cloves garlic, minced\n- 1 whole green bell pepper, seeded and sliced\n- 1 whole red bell pepper, seeded and sliced\n- 1/2 large red onion, sliced\n- Salt\n- 4 whole Roma tomatoes, diced\n- 2 cups low-sodium chicken broth\n- 1/2 cups white wine\n- 1 cup heavy cream\n- Cayenne pepper, for sprinkling\n- Freshly ground black pepper\n- Chopped fresh parsley, for garnish\n'}
                                 ];
@@ -195,8 +195,8 @@ class RecipeBox extends Component{
                         <div className="form-group">
                             <input className="form-control" id="name" type="text" placeholder="Recepie" />                        
                             <textarea className="form-control" id="ingredient" rows="3" placeholder='Ingredients'></textarea>
-                            <button className="btn mr-1 mt-2 btn-info" onClick={this.submitRecepie}>Submit Recipe</button>
-                            <button className="btn mt-2 btn-danger" onClick={this.showAll}>Cancel recipes</button>
+                            <button className="btn mr-1 btn-sm mt-2 btn-info" onClick={this.submitRecepie}>Submit Recipe</button>
+                            <button className="btn mt-2 btn-sm btn-danger" onClick={this.showAll}>Cancel recipes</button>
                         </div>
                         </form>
                         </div>

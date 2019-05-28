@@ -19,9 +19,9 @@ class Navigation extends Component{
                     <div className="siteNavbar collapse navbar-collapse" id="navbarMarkup">
                         <div className="linksContainer navbar-nav">
                         <Link className="navLink nav-item nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
-                        <Link className="navLink nav-item nav-link" to="/about">About</Link>
-                        <Link id="logoMiddleMenu" className="lightText display-4 px-2" to="/"><IoLogoXing /></Link>
                         <Link className="navLink nav-item nav-link" to="/projects">Projects</Link>
+                        <Link id="logoMiddleMenu" className="lightText display-4 px-2" to="/"><IoLogoXing /></Link>
+                        <Link className="navLink nav-item nav-link" to="/resume">Resume</Link>
                         <Link className="navLink nav-item nav-link" to="/contacts">Contacts</Link>
                         </div>
                     </div>
