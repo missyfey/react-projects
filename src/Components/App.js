@@ -12,6 +12,7 @@ import RecipeBox from './RecipeBox';
 import ToDo from './ToDo';
 import Memorycard from './MemoryCard';
 import Clock from './Clock';
+import WeightTracker from './WeightTracker';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Weather path="/weather" />
         <ToDo path="/todo" />
         <Clock path="/clock" />
+        <WeightTracker path='/weighttracker' />
       </Router>
       <Footer path="/footer" /> 
     </div>
