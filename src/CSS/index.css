@@ -433,6 +433,11 @@ input:checked + .slider:before {
 .timeDisplay{
   color: white;
 }
+
+/********************************************** Weight Tracker app */
+#weighttracker .form-group {
+  margin-bottom: 0 !important;
+}
 /********************************************** animations */
 @keyframes fadeIn{
   0% {

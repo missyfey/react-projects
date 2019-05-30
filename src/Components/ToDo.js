@@ -83,7 +83,8 @@ class ToDo extends Component{
                     }
                 ]
             }))
-            
+        let newToDo = {date: new Date() , noteID: this.newId() , note: myNote};
+            localStorage.setItem(ToDo, 'newToDo')
         }
         document.getElementById('newNote').value = '';
     }
