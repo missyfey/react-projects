@@ -125,7 +125,13 @@ class ToDo extends Component{
     
         return(
             <article id="reactProjectContainer" className="projectWrap d-flex align-items-center">  
-                <div className="container">              
+                <div className="container"> 
+                    <div className="pb-2">
+                        <p className="font-weight-bold">App Description:</p>
+                        <p>It's a simple todo list. It keeps data in states and go back to original state in any page refresh.
+                           <br/> You can add or delete items to the list, and can search through list.
+                        </p>
+                    </div>              
                     <div className="projectContainer p-5">
                         <h4 className="darkText py-3 text-center"><FaClipboardList className="h2"/> ToDo List</h4>
                         <Link onClick={this.goBack}  to="/projects" >

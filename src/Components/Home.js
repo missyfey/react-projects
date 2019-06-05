@@ -11,7 +11,7 @@ class Home extends Component{
                 <div className="homePage d-flex justify-content-center">
                 <section className="container vh-100 d-flex row align-items-end">
                    <div className="text-center col-12">
-                        <IoLogoXing className="display-1 lightText"/>
+                        {/* <IoLogoXing className="display-1 lightText"/> */}
                         <h1 className="white py-3">Create A Beautiful Online Portfolio</h1>
                         <p className="lightText">Stand out in the crowd with a captivating website.</p>
                    </div>

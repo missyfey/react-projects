@@ -438,6 +438,211 @@ input:checked + .slider:before {
 #weighttracker .form-group {
   margin-bottom: 0 !important;
 }
+
+/********************************************** Drag n Drop game */
+.dropBox{
+  height: 250px;
+  background: #95C623;
+}
+
+
+/********************************************** Movie */
+.movieFormContainer{
+  margin-top: 2em;
+}
+.k-multiselect{
+border: 1px solid rgba(0,0,0,0.15);
+
+}
+.k-multiselect-wrap{
+  border-color: rgba(0,0,0,0) !important;
+  font-size: 0.8rem !important;
+}
+.movieListPage{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.card-date{
+  color: #555;
+  font-size: .8em;
+}
+.card-title{
+  margin-bottom: 0 !important;
+}
+.card-img{
+  border-radius: 0 !important;
+  border: 0;
+  width:100%;
+}
+.movieCard{
+  margin-bottom: 1em;  
+}
+.allInfo .card{
+  box-shadow: #555 5px 5px 5px !important; 
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  border-bottom: 0;
+}
+.allInfo .card-body{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 1em !important;
+width: 100%;
+height: 240px;
+}
+.allInfo .card p{
+  font-size: .85em;
+  text-align: justify;
+}
+.progress-bar{
+  background-color: #00d573 !important;
+}
+.progress{
+  height: .5rem !important;
+  box-shadow: #555 2px 2px 2px;
+  margin-bottom: 1em;
+}
+.moreInfo{
+  border-top: 1px solid #555;
+}
+.allInfo .card-body{
+  background: white !important;
+}
+.overview{
+  height: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(rgb(255, 255, 255),  transparent);
+  mask-image: linear-gradient(rgb(255, 255, 255), transparent);
+  -webkit-mask-mode: luminance;
+  mask-mode: luminance;
+}
+.no-selectable{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;  
+}
+.k-input ::placeholder{
+  color:red !important;
+}
+.single-movie-bg{  
+  min-height: 100vh;  
+  background-image: radial-gradient(circle at 20% 50%, rgba(11, 65, 94, 0.534) 0%, rgb(2, 66, 100) 100%);
+padding: 1em;
+background-size: cover;
+display: block;
+  width: 100%;
+}
+.movieDetail{
+  color:white !important;
+}
+.poster{
+  width: 100%;
+  border: 3px white solid;
+  box-shadow: rgba(77, 77, 77, 0.664) 7px 7px 7px;
+}
+.detailTitle{
+  font-size:2em;
+  font-weight: 700;
+}
+.detailDate{
+  opacity: 0.6;
+  font-size: 1.2em;
+}
+.barDetail{
+  margin: 2em;
+}
+.crew{
+  padding-top: .8em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.crewImage{
+  float:right;
+}
+.backLink{
+  font-size: 1.5em;
+}
+.linkText{
+  color: white;
+  margin: .5em;
+}
+.backLink a{
+  color:white ;
+}
+.backLink a:hover{
+  text-decoration: none;
+}
+.castImage{
+  width: 100%;
+}
+.castContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cast{
+  padding: 1em 0 1em 0;
+}
+.castMember{
+  box-shadow: #555 5px 5px 5px;
+  border: 1px solid rgb(172, 172, 172);
+  margin: 1em;
+  padding: 0 !important;
+}
+.castMember h6, p{
+  padding: 0 7px;
+}
+#result{
+  padding: 0.375rem 0.75rem;
+}
+#result img{
+  width: 50px;
+  height: 70px;
+  border: 1px solid white;
+  margin-right: .4em;
+}
+#result li{
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: linear-gradient(rgb(224, 224, 224),rgb(146, 146, 146));
+  width: 100%;
+  color: rgb(70, 70, 70) !important;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+#result a{
+  text-decoration: none;
+}
+#resulr ul{  
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.resultRow{
+  display: flex;
+  padding: 0.4em;
+}
+.noDisplay{
+  display:none;
+}
+.formResults {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  /* overflow-y: visible; */
+  text-align: left;
+  color:white;
+}  
+@media(max-width: 375px){
+  .card-body h5 p{
+    font-size:.7em;
+  }
+}
+
 /********************************************** animations */
 @keyframes fadeIn{
   0% {

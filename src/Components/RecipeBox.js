@@ -132,15 +132,14 @@ class RecipeBox extends Component{
         return addedId
     }
     showSingle(e){
-        console.log(e.target.id);
+        var capturedId = e.target.id;
         document.getElementById('displayForm').classList.add('hidden');
         document.getElementById('displayList').classList.add('hidden');
         document.getElementById('displaySingle').classList.remove('hidden');
         let list = this.state.recipes;
         let single = list.filter(item=>{
-            if(item.id === e.target.id){ return true}
+            if(item.id == capturedId ){ return true}
         })
-        console.log(single)
         this.setState({
             singleItem: single
         })
@@ -152,7 +151,13 @@ class RecipeBox extends Component{
     render(){
         return(
             <article id="reactProjectContainer" className="projectWrap d-flex align-items-center">  
-                <div className="container">              
+                <div className="container">     
+                <div className="pb-2">
+                        <p className="font-weight-bold">App Description:</p>
+                        <p>It's a simple Recipe Box. You can add a new recipe or delete / edit old recipes.<br/>
+                        It keeps data in states.
+                        </p>
+                    </div>         
                     <div className="projectContainer p-5">
                         <h4 className="darkText py-3 text-center"><FaUtensils className="h2"/> Recipe Box</h4>
                         <Link onClick={this.goBack}  to="/projects" >
@@ -171,7 +176,7 @@ class RecipeBox extends Component{
                                     <h4 className="pt-md-5 pt-sm-2">Recipe List</h4>
                                     {this.state.recipes.map(item=>{
                                         return(
-                                            <button key={item.id} id={item.id} className="btn btn-warning my-1 d-block w-100" onClick={this.showSingle}>{item.name}</button>
+                                            <button key={item.id} id={item.id} className="btn btn-warning my-1 d-block w-100" onClick={(e)=> this.showSingle(e)}>{item.name}</button>
                                         )
                                     })}
                                 </div>

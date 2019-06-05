@@ -186,7 +186,13 @@ class MemoryCard extends Component{
         let id = 0;       
         return(
             <article id="reactProjectContainer" className="projectWrap d-flex align-items-center">  
-                <div className="container">              
+                <div className="container">
+                    <div className="pb-2">
+                        <p className="font-weight-bold">App Description:</p>
+                        <p>In this game you can choose to play in easy, medium or hard level. And can choose the theme for game.<br/>
+                            any time you start a new game it will shuffle from an array and pick random cards from selected theme.
+                        </p>
+                    </div>            
                     <div className="projectContainer p-5">
                         <h4 className="darkText py-3 text-center"><GiCardRandom className="h1"/> Memory card Game</h4>
                         <Link onClick={this.goBack}  to="/projects" >

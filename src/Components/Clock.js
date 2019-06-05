@@ -52,7 +52,11 @@ class Clock extends Component{
     render(){
         return(
         <article id="reactProjectContainer" className="projectWrap d-flex align-items-center">  
-            <div className="container">              
+            <div className="container">   
+                <div className="pb-2">
+                <p className="font-weight-bold">App Description:</p>
+                <p>This app shows the time and you can toggle date.</p>
+                </div>  
                 <div className="projectContainer p-5">
                     <h4 className="darkText py-3 text-center"><FaClock className="h2"/> Clock</h4>
                     <Link onClick={this.goBack}  to="/projects" >
