@@ -13,6 +13,9 @@ import ToDo from './ToDo';
 import Memorycard from './MemoryCard';
 import Clock from './Clock';
 import WeightTracker from './WeightTracker';
+import DragnDrop from './DragnDrop';
+import Movie from './Movie';
+import MovieDetail from './MovieDetail';
 
 function App() {
   return (
@@ -21,7 +24,10 @@ function App() {
       <Router>
         <Home path="/" />
         <Projects path="/projects" />
+        <DragnDrop path="/dragndrop"/>
         <Memorycard path="/cardgame" />
+	  	<Movie path="/movie" />
+	  	<MovieDetail path="/MovieDetail/:id" />
         <RecipeBox path="/recipe" />
         <Weather path="/weather" />
         <ToDo path="/todo" />

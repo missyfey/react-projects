@@ -24,6 +24,14 @@ class Projects extends Component{
                     <div className="container">
                         <h4 className="py-3 text-center">My recent react projects</h4>
                         <div className="row d-flex">
+                            <Link to="/movie" className="col-6 col-md-4 col-lg-3 p-3">
+                                <div className="project-item position-relative">
+                                    <div className="project-item-shade position-absolute">
+                                    </div>
+                                    <img className="project-img" src="/img/movie-project.jpg" alt="React project"/>
+                                </div>
+                                <p className="text-center pt-2">Movie API</p>
+                            </Link>
                             <Link to="/weighttracker" className="col-6 col-md-4 col-lg-3 p-3">
                                 <div className="project-item position-relative">
                                     <div className="project-item-shade position-absolute">
@@ -32,6 +40,14 @@ class Projects extends Component{
                                 </div>
                                 <p className="text-center pt-2">Weight Tracker App</p>
                             </Link>
+                            {/* <Link to="/dragndrop" className="col-6 col-md-4 col-lg-3 p-3">
+                                <div className="project-item position-relative">
+                                    <div className="project-item-shade position-absolute">
+                                    </div>
+                                    <img className="project-img" src="/img/dragndrop-project.jpg" alt="React project"/>
+                                </div>
+                                <p className="text-center pt-2">Drag And Drop Game</p>
+                            </Link> */}
                             <Link to="/clock" className="col-6 col-md-4 col-lg-3 p-3">
                                 <div className="project-item position-relative">
                                     <div className="project-item-shade position-absolute">
@@ -56,14 +72,6 @@ class Projects extends Component{
                                 </div>
                                 <p className="text-center pt-2">Memory Card Game</p>
                             </Link>
-                            <div className="col-6 col-md-4 col-lg-3 p-3">
-                                <div className="project-item position-relative">
-                                    <div className="project-item-shade position-absolute">
-                                    </div>
-                                    <img className="project-img" src="/img/movie-project.jpg" alt="React project"/>
-                                </div>
-                                <p className="text-center pt-2">Movie API</p>
-                            </div>
                             <Link to="/recipe" className="col-6 col-md-4 col-lg-3 p-3">
                                 <div className="project-item position-relative">
                                     <div className="project-item-shade position-absolute">

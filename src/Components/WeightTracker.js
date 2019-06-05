@@ -106,7 +106,12 @@ class WeightTracker extends Component{
         }    
         return(
         <article id="reactProjectContainer" className="projectWrap d-flex align-items-center">
-            <div className="container">              
+            <div className="container">  
+                <div className="pb-2">
+                    <p className="font-weight-bold">App Description:</p>
+                    <p>This app stores data on local storage, As long as the locall storage have not cleared it keeps data even if 
+                        browser closes. </p>
+                </div>            
                 <div className="projectContainer p-5">
                     <h4 className="darkText py-3 text-center"><FaWeight /> Weight Tracker</h4>
                     <Link onClick={this.goBack}  to="/projects" >
@@ -140,11 +145,6 @@ class WeightTracker extends Component{
                         </div>
                     </div>
                     </section>
-                <div>
-                    <p>App Description:</p>
-                    <p>This app stores data on local storage, As long as the locall storage have not cleared it keeps data even if 
-                        browser closes. </p>
-                </div>
                 </div>
             </div>
         </article>

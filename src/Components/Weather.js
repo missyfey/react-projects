@@ -208,7 +208,11 @@ class Weather extends Component{
         let currentDate = this.findCurrentDate();
         return(
                 <article id="reactProjectContainer" className="projectWrap d-flex align-items-center">  
-                <div className="container">              
+                <div className="container">
+                    <div className="pb-2">
+                    <p className="font-weight-bold">App Description:</p>
+                    <p>This app gets data from API. You can search by city name and get weather forecast for 5 days, every 3 hours.</p>
+                    </div>             
                     <div className="projectContainer p-5">
                         <h4 className="darkText py-3 text-center"><FaCloudSun className="h2"/> Weather app</h4>
                         <Link onClick={this.goBack}  to="/projects" >
