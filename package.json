@@ -11,7 +11,7 @@
     "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
     "jquery": "^3.4.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "materialize-css": "^1.0.0-rc.2",
     "moment": "^2.24.0",
     "popper.js": "^1.15.0",
